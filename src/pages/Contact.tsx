@@ -6,31 +6,31 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { toast } from "sonner";
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    message: "",
+    message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Form submission logic would go here
     toast.success("Thank you! We'll get back to you soon.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: ""
+    });
   };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value
     });
   };
-
-  return (
-    <div className="w-full">
+  return <div className="w-full">
       {/* Hero Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -61,9 +61,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <a href="tel:+919777246767" className="text-muted-foreground hover:text-primary transition-colors">
-                        +91 123 456 7890
-                      </a>
+                      <a href="tel:+919777246767" className="text-muted-foreground hover:text-primary transition-colors">+91 9777246767</a>
                     </div>
                   </div>
 
@@ -111,15 +109,9 @@ const Contact = () => {
               {/* Map */}
               <Card className="border-border shadow-soft overflow-hidden">
                 <CardContent className="p-0">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.4762825824415!2d83.96965131484258!3d21.46510858580796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a228a2e2c0c1b3d%3A0x6c3e8f0e7c0c1b3d!2sSambalpur%2C%20Odisha!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
-                    width="100%"
-                    height="350"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    title="Restaurant Location"
-                  />
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.4762825824415!2d83.96965131484258!3d21.46510858580796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a228a2e2c0c1b3d%3A0x6c3e8f0e7c0c1b3d!2sSambalpur%2C%20Odisha!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="350" style={{
+                  border: 0
+                }} allowFullScreen loading="lazy" title="Restaurant Location" />
                 </CardContent>
               </Card>
             </div>
@@ -137,52 +129,22 @@ const Contact = () => {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-2">
                       <Label htmlFor="name">Name *</Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        placeholder="Your full name"
-                      />
+                      <Input id="name" name="name" value={formData.name} onChange={handleChange} required placeholder="Your full name" />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="email">Email *</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        placeholder="your.email@example.com"
-                      />
+                      <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required placeholder="your.email@example.com" />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="phone">Phone</Label>
-                      <Input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        placeholder="+91 1234567890"
-                      />
+                      <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+91 1234567890" />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="message">Message *</Label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                        rows={6}
-                        placeholder="Tell us how we can help you..."
-                      />
+                      <Textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows={6} placeholder="Tell us how we can help you..." />
                     </div>
 
                     <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary/90">
@@ -195,8 +157,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;

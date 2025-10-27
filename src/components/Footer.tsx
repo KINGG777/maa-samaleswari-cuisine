@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-card border-t border-border">
+  return <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section */}
@@ -15,31 +13,13 @@ const Footer = () => {
               Experience authentic Odia and Indian cuisine with traditional flavors and modern ambiance.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Facebook"
-              >
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Facebook">
                 <Facebook size={24} />
               </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Instagram"
-              >
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
                 <Instagram size={24} />
               </a>
-              <a
-                href="https://wa.me/1234567890"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="WhatsApp"
-              >
+              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="WhatsApp">
                 <Phone size={24} />
               </a>
             </div>
@@ -78,15 +58,13 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin size={20} className="text-primary mt-1 flex-shrink-0" />
-                <span className="text-muted-foreground">
-                  123 Main Street, Sambalpur, Odisha 768001
-                </span>
+                <span className="text-muted-foreground">Opposite To KL Office,Charmal
+Sambalpur, Odisha 768106
+India</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={20} className="text-primary flex-shrink-0" />
-                <a href="tel:+911234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                  +91 123 456 7890
-                </a>
+                <a href="tel:+911234567890" className="text-muted-foreground hover:text-primary transition-colors">+91 9777246767</a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-primary flex-shrink-0" />
@@ -102,8 +80,6 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} Maa Samaleswari Restaurant. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
