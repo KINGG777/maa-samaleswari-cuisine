@@ -61,7 +61,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <a href="tel:+911234567890" className="text-muted-foreground hover:text-primary transition-colors">
+                      <a href="tel:+919777246767" className="text-muted-foreground hover:text-primary transition-colors">
                         +91 123 456 7890
                       </a>
                     </div>
@@ -86,8 +86,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Address</h3>
                       <p className="text-muted-foreground">
-                        123 Main Street<br />
-                        Sambalpur, Odisha 768001<br />
+                        Opposite To KL Office,Charmal<br />
+                        Sambalpur, Odisha 768106<br />
                         India
                       </p>
                     </div>
