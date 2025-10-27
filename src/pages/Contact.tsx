@@ -139,7 +139,7 @@ const Contact = () => {
 
                     <div className="space-y-2">
                       <Label htmlFor="phone">Phone</Label>
-                      <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+91 1234567890" />
+                      <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+91 7008746346" />
                     </div>
 
                     <div className="space-y-2">
