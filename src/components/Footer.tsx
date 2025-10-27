@@ -64,7 +64,7 @@ India</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={20} className="text-primary flex-shrink-0" />
-                <a href="tel:+911234567890" className="text-muted-foreground hover:text-primary transition-colors">+91 9777246767</a>
+                <a href="tel:+917008746346" className="text-muted-foreground hover:text-primary transition-colors">+91 7008746346</a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-primary flex-shrink-0" />
